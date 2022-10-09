@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>ToDo</title>
+
+        <link rel="stylesheet" href="{% static 'to_do/css/bootstrap.css'%}">
+
+    </head>
+    <body>
+        <div class="container mt-5">
+            <h2 class="text-center alert alert-danger">To-Do Application</h2>
+            {% block content %} {% endblock content %}
+        </div>
+        <script src="{% static 'to_do/js/jquery.js'%}"></script>
+        <script src="{% static 'to_do/js/propper.js'%}"></script>
+        <script src="{% static 'to_do/js/bootstrap.js'%}"></script>
+    </body>
+</html>
